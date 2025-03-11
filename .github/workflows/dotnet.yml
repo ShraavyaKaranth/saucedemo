@@ -56,5 +56,6 @@ jobs:
       run: dotnet test --list-tests
 
     - name: Run SpecFlow Tests (Happy Flow)
-      working-directory: sauceLabs_PageObject  # ✅ Change to the project folder
-      run: dotnet test --no-build --configuration Release --filter "TestCategory=happyFlow"
+      working-directory: sauceLabs_PageObject
+      run: dotnet test --no-build --configuration Release --filter "FullyQualifiedName~ExecutionOfSaucedemo"
+
