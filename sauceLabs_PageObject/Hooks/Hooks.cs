@@ -1,5 +1,7 @@
 using System;
 using System.IO;
+using System.Net;
+using System.Net.Mail;
 using System.Threading;
 using NUnit.Framework;
 using OpenQA.Selenium;
@@ -88,6 +90,9 @@ namespace sauceLabs_PageObject.Hooks
             }
 
             _extent.Flush();
+
+            // ✅ Send email with report via Gmail
+            SendEmailWithGmail();
         }
 
         private string CaptureScreenshotBase64()
@@ -110,6 +115,52 @@ namespace sauceLabs_PageObject.Hooks
             {
                 TestContext.Progress.WriteLine($"Failed to capture screenshot: {ex.Message}");
                 return null;
+            }
+        }
+
+        private static void SendEmailWithGmail()
+        {
+            try
+            {
+                string smtpServer = "smtp.gmail.com";
+                int smtpPort = 587;
+                string senderEmail = "shravyakaranth64715@gmail.com"; // ✅ Replace with your Gmail
+                string senderPassword = "gadc mhyr pkpx jljf"; // ✅ Use the Google App Password
+                string recipientEmail = "shravyabahha@gmail.com";
+
+                MailMessage mail = new MailMessage
+                {
+                    From = new MailAddress(senderEmail),
+                    Subject = "SpecFlow Test Report",
+                    Body = "Attached is the Extent Report from the latest test execution.",
+                    IsBodyHtml = false
+                };
+
+                mail.To.Add(recipientEmail);
+
+                // ✅ Attach Extent Report
+                if (File.Exists(reportPath))
+                {
+                    mail.Attachments.Add(new Attachment(reportPath));
+                    TestContext.Progress.WriteLine("✅ Attached Extent Report");
+                }
+                else
+                {
+                    TestContext.Progress.WriteLine("❌ Report file not found!");
+                }
+
+                SmtpClient smtp = new SmtpClient(smtpServer, smtpPort)
+                {
+                    Credentials = new NetworkCredential(senderEmail, senderPassword),
+                    EnableSsl = true
+                };
+
+                smtp.Send(mail);
+                TestContext.Progress.WriteLine("✅ Email sent successfully via Gmail SMTP!");
+            }
+            catch (Exception ex)
+            {
+                TestContext.Progress.WriteLine($"❌ Failed to send email via Gmail SMTP: {ex.Message}");
             }
         }
     }
