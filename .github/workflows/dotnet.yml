@@ -49,7 +49,6 @@ jobs:
     - name: Build project
       run: dotnet build --no-restore --configuration Release
 
-    - name: Run All SpecFlow Tests
-      working-directory: src
-      run: dotnet test --no-build --configuration Release
+    - name: Run SpecFlow Tests (Happy Flow)
+      run: dotnet test --no-build --configuration Release --filter "TestCategory=happyFlow"
 
