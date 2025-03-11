@@ -13,7 +13,7 @@ namespace sauceLabs_PageObject.Pages
         {
             Thread.Sleep(2000);
             string actualText = driver.FindElement(confirmationMessage).Text;
-            Assert.That(actualText, Is.EqualTo("Thank you for your order!"));
+            Assert.That(actualText, Is.EqualTo("Thank you for your ordder!"));
         }
     }
 }
