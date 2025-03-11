@@ -31,7 +31,7 @@ jobs:
         CHROME_VERSION=$(google-chrome --version | grep -oP '[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+' | head -1)
         CHROMEDRIVER_VERSION=$(curl -s "https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json" \
           | jq -r ".versions[] | select(.version==\"$CHROME_VERSION\") | .downloads.chromedriver[] | select(.platform==\"linux64\") | .url")
-        
+
         if [[ -z "$CHROMEDRIVER_VERSION" ]]; then
           echo "Error: No matching ChromeDriver found for Chrome version $CHROME_VERSION"
           exit 1
@@ -44,11 +44,17 @@ jobs:
         chromedriver --version
 
     - name: Restore dependencies
+      working-directory: sauceLabs_PageObject  # ✅ Change to the project folder
       run: dotnet restore
 
     - name: Build project
+      working-directory: sauceLabs_PageObject  # ✅ Change to the project folder
       run: dotnet build --no-restore --configuration Release
 
-    - name: Run SpecFlow Tests (Happy Flow)
-      run: dotnet test --no-build --configuration Release --filter "TestCategory=happyFlow"
+    - name: List available tests (for debugging)
+      working-directory: sauceLabs_PageObject  # ✅ Change to the project folder
+      run: dotnet test --list-tests
 
+    - name: Run SpecFlow Tests (Happy Flow)
+      working-directory: sauceLabs_PageObject  # ✅ Change to the project folder
+      run: dotnet test --no-build --configuration Release --filter "TestCategory=happyFlow"
