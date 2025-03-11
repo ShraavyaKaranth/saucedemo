@@ -1,7 +1,5 @@
 using System;
 using System.IO;
-using System.Net;
-using System.Net.Mail;
 using System.Threading;
 using NUnit.Framework;
 using OpenQA.Selenium;
@@ -64,12 +62,13 @@ namespace sauceLabs_PageObject.Hooks
         public void InsertReportingSteps()
         {
             string stepText = _scenarioContext.StepContext.StepInfo.Text;
-            string screenshotPath = null;
+            string screenshotBase64 = null;
 
             if (_scenarioContext.TestError != null)
             {
-                screenshotPath = CaptureScreenshot(_scenarioContext.ScenarioInfo.Title);
-                _scenario.Log(Status.Fail, stepText, MediaEntityBuilder.CreateScreenCaptureFromPath(screenshotPath).Build());
+                screenshotBase64 = CaptureScreenshotBase64();
+                string imgTag = $"<img src='data:image/png;base64,{screenshotBase64}' width='600px' />";
+                _scenario.Log(Status.Fail, stepText + "<br>" + imgTag);
                 _scenario.Log(Status.Fail, _scenarioContext.TestError.Message);
             }
             else
@@ -89,12 +88,9 @@ namespace sauceLabs_PageObject.Hooks
             }
 
             _extent.Flush();
-
-            // ✅ Send email with report & screenshots using Gmail SMTP
-            SendEmailWithGmail();
         }
 
-        private string CaptureScreenshot(string scenarioName)
+        private string CaptureScreenshotBase64()
         {
             try
             {
@@ -107,61 +103,13 @@ namespace sauceLabs_PageObject.Hooks
                 Thread.Sleep(500);
                 Screenshot screenshot = ((ITakesScreenshot)driver).GetScreenshot();
 
-                string filePath = Path.Combine(screenshotsDir, $"{scenarioName}.png");
-                screenshot.SaveAsFile(filePath);
-
-                TestContext.Progress.WriteLine($"Screenshot saved at: {filePath}");
-                return filePath;
+                // Convert screenshot to Base64
+                return screenshot.AsBase64EncodedString;
             }
             catch (Exception ex)
             {
                 TestContext.Progress.WriteLine($"Failed to capture screenshot: {ex.Message}");
                 return null;
-            }
-        }
-
-        private static void SendEmailWithGmail()
-        {
-            try
-            {
-                string smtpServer = "smtp.gmail.com";
-                int smtpPort = 587;
-                string senderEmail = "shravyakaranth64715@gmail.com"; // ✅ Replace with your Gmail address
-                string senderPassword = "gadc mhyr pkpx jljf"; // ✅ Use the App Password (16 characters)
-                string recipientEmail = "shravyabahha@gmail.com";
-
-                MailMessage mail = new MailMessage
-                {
-                    From = new MailAddress(senderEmail),
-                    Subject = "SpecFlow Test Report & Screenshots",
-                    Body = "Attached are the Extent Report and failure screenshots from the latest test execution.",
-                    IsBodyHtml = false
-                };
-
-                mail.To.Add(recipientEmail);
-
-                // ✅ Attach Extent Report
-                if (File.Exists(reportPath))
-                    mail.Attachments.Add(new Attachment(reportPath));
-
-                // ✅ Attach Screenshots (if any)
-                foreach (string screenshot in Directory.GetFiles(screenshotsDir, "*.png"))
-                {
-                    mail.Attachments.Add(new Attachment(screenshot));
-                }
-
-                SmtpClient smtp = new SmtpClient(smtpServer, smtpPort)
-                {
-                    Credentials = new NetworkCredential(senderEmail, senderPassword),
-                    EnableSsl = true
-                };
-
-                smtp.Send(mail);
-                TestContext.Progress.WriteLine("✅ Email sent successfully via Gmail SMTP!");
-            }
-            catch (Exception ex)
-            {
-                TestContext.Progress.WriteLine($"❌ Failed to send email via Gmail SMTP: {ex.Message}");
             }
         }
     }
