@@ -1,0 +1,7 @@
+﻿dotnet test --filter "(TestCategory=LoginPage)"
+dotnet test --filter "(TestCategory=ViewItem)"
+dotnet test --filter "TestCategory=AddToCart"
+dotnet test --filter "TestCategory=Checkout"
+dotnet test --filter "TestCategory=Checkout2"
+dotnet test --filter "TestCategory=CheckoutOverview"
+dotnet test --filter "TestCategory=ConfirmationPage"

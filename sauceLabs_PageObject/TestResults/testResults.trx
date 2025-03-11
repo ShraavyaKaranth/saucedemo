@@ -1,0 +1,628 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="80b79325-737b-4b93-bfc8-66efed53b8e5" name="shkar@AUTOGGJLK96NG2O 2025-02-13 14:56:38" runUser="EGDK\shkar" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2025-02-13T14:56:38.5571307+05:30" queuing="2025-02-13T14:56:38.5571310+05:30" start="2025-02-13T14:56:15.5665684+05:30" finish="2025-02-13T14:57:36.4858169+05:30" />
+  <TestSettings name="default" id="5f75ee26-d22c-4e63-8fb0-5ee4d6247be7">
+    <Deployment runDeploymentRoot="shkar_AUTOGGJLK96NG2O_2025-02-13_14_56_38" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="c1e5598c-6773-4fec-88f3-d81725aa5a77" testId="2c7273f1-e8af-0c0b-008a-af0950e095c2" testName="UserTriesToLogIn" computerName="AUTOGGJLK96NG2O" duration="00:00:00.0366390" startTime="2025-02-13T14:56:42.6020542+05:30" endTime="2025-02-13T14:56:42.6386942+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c1e5598c-6773-4fec-88f3-d81725aa5a77">
+      <Output>
+        <StdOut>Given User is in the login page&#xD;
+-&gt; No matching step definition found for the step. Use the following code to create one:&#xD;
+        [Given(@"User is in the login page")]&#xD;
+        public void GivenUserIsInTheLoginPage()&#xD;
+        {&#xD;
+            _scenarioContext.Pending();&#xD;
+        }&#xD;
+&#xD;
+When User types user name and password and clicks on login button&#xD;
+-&gt; No matching step definition found for the step. Use the following code to create one:&#xD;
+        [When(@"User types user name and password and clicks on login button")]&#xD;
+        public void WhenUserTypesUserNameAndPasswordAndClicksOnLoginButton()&#xD;
+        {&#xD;
+            _scenarioContext.Pending();&#xD;
+        }&#xD;
+&#xD;
+Then User logs in&#xD;
+-&gt; No matching step definition found for the step. Use the following code to create one:&#xD;
+        [Then(@"User logs in")]&#xD;
+        public void ThenUserLogsIn()&#xD;
+        {&#xD;
+            _scenarioContext.Pending();&#xD;
+        }&#xD;
+&#xD;
+&#xD;
+No matching step definition found for one or more steps.&#xD;
+using System;&#xD;
+using TechTalk.SpecFlow;&#xD;
+&#xD;
+namespace MyNamespace&#xD;
+{&#xD;
+    [Binding]&#xD;
+    public class StepDefinitions&#xD;
+    {&#xD;
+        private readonly ScenarioContext _scenarioContext;&#xD;
+&#xD;
+        public StepDefinitions(ScenarioContext scenarioContext)&#xD;
+        {&#xD;
+            _scenarioContext = scenarioContext;&#xD;
+        }&#xD;
+        [Given(@"User is in the login page")]&#xD;
+        public void GivenUserIsInTheLoginPage()&#xD;
+        {&#xD;
+            _scenarioContext.Pending();&#xD;
+        }&#xD;
+        &#xD;
+        [When(@"User types user name and password and clicks on login button")]&#xD;
+        public void WhenUserTypesUserNameAndPasswordAndClicksOnLoginButton()&#xD;
+        {&#xD;
+            _scenarioContext.Pending();&#xD;
+        }&#xD;
+        &#xD;
+        [Then(@"User logs in")]&#xD;
+        public void ThenUserLogsIn()&#xD;
+        {&#xD;
+            _scenarioContext.Pending();&#xD;
+        }&#xD;
+    }&#xD;
+}</StdOut>
+        <ErrorInfo>
+          <Message>No matching step definition found for one or more steps.&#xD;
+using System;&#xD;
+using TechTalk.SpecFlow;&#xD;
+&#xD;
+namespace MyNamespace&#xD;
+{&#xD;
+    [Binding]&#xD;
+    public class StepDefinitions&#xD;
+    {&#xD;
+        private readonly ScenarioContext _scenarioContext;&#xD;
+&#xD;
+        public StepDefinitions(ScenarioContext scenarioContext)&#xD;
+        {&#xD;
+            _scenarioContext = scenarioContext;&#xD;
+        }&#xD;
+        [Given(@"User is in the login page")]&#xD;
+        public void GivenUserIsInTheLoginPage()&#xD;
+        {&#xD;
+            _scenarioContext.Pending();&#xD;
+        }&#xD;
+        &#xD;
+        [When(@"User types user name and password and clicks on login button")]&#xD;
+        public void WhenUserTypesUserNameAndPasswordAndClicksOnLoginButton()&#xD;
+        {&#xD;
+            _scenarioContext.Pending();&#xD;
+        }&#xD;
+        &#xD;
+        [Then(@"User logs in")]&#xD;
+        public void ThenUserLogsIn()&#xD;
+        {&#xD;
+            _scenarioContext.Pending();&#xD;
+        }&#xD;
+    }&#xD;
+}&#xD;
+</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d6faedf5-fd07-4e2f-95e4-116a2c58b061" testId="4eaadd63-7156-c678-fe35-bdb2b80d0ea9" testName="AddTwoNumbers" computerName="AUTOGGJLK96NG2O" duration="00:00:00.0153460" startTime="2025-02-13T14:56:38.5208669+05:30" endTime="2025-02-13T14:56:38.5362130+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d6faedf5-fd07-4e2f-95e4-116a2c58b061">
+      <Output>
+        <StdOut>Given the first number is 50&#xD;
+-&gt; pending: CalculatorStepDefinitions.GivenTheFirstNumberIs(50)&#xD;
+And the second number is 70&#xD;
+-&gt; skipped because of previous errors&#xD;
+When the two numbers are added&#xD;
+-&gt; skipped because of previous errors&#xD;
+Then the result should be 120&#xD;
+-&gt; skipped because of previous errors&#xD;
+&#xD;
+One or more step definitions are not implemented yet.&#xD;
+  CalculatorStepDefinitions.GivenTheFirstNumberIs(50)</StdOut>
+        <ErrorInfo>
+          <Message>One or more step definitions are not implemented yet.&#xD;
+  CalculatorStepDefinitions.GivenTheFirstNumberIs(50)</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="01c142a7-94aa-4e4e-b23c-54a08b8d162e" testId="64b11049-483d-50fb-400a-08d1983d4a02" testName="UserIsLoggedInAndViewsAnItem" computerName="AUTOGGJLK96NG2O" duration="00:00:20.4355060" startTime="2025-02-13T14:57:14.6855186+05:30" endTime="2025-02-13T14:57:35.1211738+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="01c142a7-94aa-4e4e-b23c-54a08b8d162e">
+      <Output>
+        <StdOut>Given User is logged in&#xD;
+User is logged in&#xD;
+-&gt; done: ViewItemStepDefinitions.GivenUserIsLoggedIn() (0.0s)&#xD;
+When User views an item&#xD;
+-&gt; error: Timed out after 20 seconds (20.4s)&#xD;
+Then Item data is displayed&#xD;
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>OpenQA.Selenium.WebDriverTimeoutException : Timed out after 20 seconds&#xD;
+  ----&gt; OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {"method":"xpath","selector":"//img[@alt='Sauce Labs Backpack']"}&#xD;
+  (Session info: chrome=133.0.6943.54); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception</Message>
+          <StackTrace>   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)&#xD;
+   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)&#xD;
+   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)&#xD;
+   at sauceLabs_PageObject.Pages.ViewItem.ClickItem() in C:\Users\shkar\source\repos\sauceLabs_PageObject\sauceLabs_PageObject\Pages\viewItem.cs:line 14&#xD;
+   at sauceLabs_PageObject.StepDefinitions.ViewItemStepDefinitions.WhenUserViewsAnItem() in C:\Users\shkar\source\repos\sauceLabs_PageObject\sauceLabs_PageObject\StepDefinitions\ViewItemStepDefinitions.cs:line 28&#xD;
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()&#xD;
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()&#xD;
+   at sauceLabs_PageObject.Features.ViewItemFeature.ScenarioCleanup()&#xD;
+   at sauceLabs_PageObject.Features.ViewItemFeature.UserIsLoggedInAndViewsAnItem() in C:\Users\shkar\source\repos\sauceLabs_PageObject\sauceLabs_PageObject\Features\viewItem.feature:line 9&#xD;
+--NoSuchElementException&#xD;
+   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)&#xD;
+   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)&#xD;
+   at sauceLabs_PageObject.Pages.ViewItem.&lt;ClickItem&gt;b__2_0(IWebDriver d) in C:\Users\shkar\source\repos\sauceLabs_PageObject\sauceLabs_PageObject\Pages\viewItem.cs:line 14&#xD;
+   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ba90f529-6473-47b4-aad1-17d2bc010612" testId="f2df62b3-db37-539d-0c15-7aafce12af52" testName="UserIsOnConfirmationPageAndChecksForTheConfirmationText" computerName="AUTOGGJLK96NG2O" duration="00:00:00.0141470" startTime="2025-02-13T14:56:42.5876494+05:30" endTime="2025-02-13T14:56:42.6017962+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ba90f529-6473-47b4-aad1-17d2bc010612">
+      <Output>
+        <StdOut>Given User is in the confirmation page&#xD;
+User is on the confirmation page.&#xD;
+-&gt; done: ConfirmationPageStepDefinitions.GivenUserIsInTheConfirmationPage() (0.0s)&#xD;
+When User checks for confirmation text and compares it with actual text&#xD;
+-&gt; error: no such element: Unable to locate element: {"method":"xpath","selector":"//h2[normalize-space()='Thank you for your order!']"}&#xD;
+  (Session info: chrome=133.0.6943.54); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception (0.0s)&#xD;
+Then If it matches, the test case passes. Else it fails.&#xD;
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {"method":"xpath","selector":"//h2[normalize-space()='Thank you for your order!']"}&#xD;
+  (Session info: chrome=133.0.6943.54); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception</Message>
+          <StackTrace>   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)&#xD;
+   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)&#xD;
+   at sauceLabs_PageObject.Pages.ConfirmationPage.VerifyConfirmationPage() in C:\Users\shkar\source\repos\sauceLabs_PageObject\sauceLabs_PageObject\Pages\confirmationPage.cs:line 14&#xD;
+   at sauceLabs_PageObject.StepDefinitions.ConfirmationPageStepDefinitions.WhenUserChecksForConfirmationTextAndComparesItWithActualText() in C:\Users\shkar\source\repos\sauceLabs_PageObject\sauceLabs_PageObject\StepDefinitions\ConfirmationPageStepDefinitions.cs:line 28&#xD;
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()&#xD;
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()&#xD;
+   at sauceLabs_PageObject.Features.ConfirmationPageFeature.ScenarioCleanup()&#xD;
+   at sauceLabs_PageObject.Features.ConfirmationPageFeature.UserIsOnConfirmationPageAndChecksForTheConfirmationText() in C:\Users\shkar\source\repos\sauceLabs_PageObject\sauceLabs_PageObject\Features\ConfirmationPage.feature:line 9
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="72c35c8b-1e84-4351-8a5a-a0077a479798" testId="68b7032f-c59e-967d-073c-8b7c564b9a6d" testName="UserIsInTheLoginPageAndLogsInUsingCorrectUsernameAndPassword" computerName="AUTOGGJLK96NG2O" duration="00:00:03.9356980" startTime="2025-02-13T14:56:42.6390811+05:30" endTime="2025-02-13T14:56:46.5748073+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="72c35c8b-1e84-4351-8a5a-a0077a479798">
+      <Output>
+        <StdOut>Given User is on login page&#xD;
+-&gt; done: LoginStepDefinitions.GivenUserIsOnLoginPage() (3.7s)&#xD;
+When User enters username and password and clicks on login button&#xD;
+-&gt; done: LoginStepDefinitions.WhenUserEntersUsernameAndPassword() (0.3s)&#xD;
+Then User is logged in&#xD;
+User successfully logged in.&#xD;
+-&gt; done: LoginStepDefinitions.ThenUserIsLoggedIn() (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="edb63380-cc26-4765-8387-51c0d26b1a7a" testId="4421fa06-fe69-44b9-3e12-86fd58acf595" testName="CartIsOpenedAndUserTriesToCheckout" computerName="AUTOGGJLK96NG2O" duration="00:00:00.0118890" startTime="2025-02-13T14:56:42.5531265+05:30" endTime="2025-02-13T14:56:42.5650157+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="edb63380-cc26-4765-8387-51c0d26b1a7a">
+      <Output>
+        <StdOut>Given The cart is opened&#xD;
+Cart is opened.&#xD;
+-&gt; done: CheckoutStepDefinitions.GivenTheCartIsOpened() (0.0s)&#xD;
+When User clicks on checkout button&#xD;
+-&gt; error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@id='checkout']"}&#xD;
+  (Session info: chrome=133.0.6943.54); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception (0.0s)&#xD;
+Then checkout page will be opened&#xD;
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {"method":"xpath","selector":"//button[@id='checkout']"}&#xD;
+  (Session info: chrome=133.0.6943.54); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception</Message>
+          <StackTrace>   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)&#xD;
+   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)&#xD;
+   at sauceLabs_PageObject.Pages.Checkout1.Checkout() in C:\Users\shkar\source\repos\sauceLabs_PageObject\sauceLabs_PageObject\Pages\checkout1.cs:line 13&#xD;
+   at sauceLabs_PageObject.StepDefinitions.CheckoutStepDefinitions.WhenUserClicksOnCheckoutButton() in C:\Users\shkar\source\repos\sauceLabs_PageObject\sauceLabs_PageObject\StepDefinitions\CheckoutStepDefinitions.cs:line 39&#xD;
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()&#xD;
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()&#xD;
+   at sauceLabs_PageObject.Features.CheckoutFeature.ScenarioCleanup()&#xD;
+   at sauceLabs_PageObject.Features.CheckoutFeature.CartIsOpenedAndUserTriesToCheckout() in C:\Users\shkar\source\repos\sauceLabs_PageObject\sauceLabs_PageObject\Features\checkout.feature:line 9
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2754c9b3-cc55-4bd9-a227-8e068f3b7681" testId="baa52d67-5ff2-f210-6429-6fb8333d76d9" testName="UserIsViewingAnItem" computerName="AUTOGGJLK96NG2O" duration="00:00:20.3915960" startTime="2025-02-13T14:56:18.1257979+05:30" endTime="2025-02-13T14:56:38.5175064+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2754c9b3-cc55-4bd9-a227-8e068f3b7681">
+      <Output>
+        <StdOut>Given User is viewing an item&#xD;
+User is viewing item&#xD;
+-&gt; done: AddToCartStepDefinitions.GivenUserIsViewingAnItem() (0.0s)&#xD;
+When User adds item to cart and clicks on cart button&#xD;
+-&gt; error: Timed out after 20 seconds (20.3s)&#xD;
+Then Cart will be opened&#xD;
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>OpenQA.Selenium.WebDriverTimeoutException : Timed out after 20 seconds&#xD;
+  ----&gt; OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {"method":"css selector","selector":"#add\-to\-cart"}&#xD;
+  (Session info: chrome=133.0.6943.54); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception</Message>
+          <StackTrace>   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)&#xD;
+   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)&#xD;
+   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)&#xD;
+   at sauceLabs_PageObject.Pages.AddToCart.AddItemToCart() in C:\Users\shkar\source\repos\sauceLabs_PageObject\sauceLabs_PageObject\Pages\addToCart.cs:line 15&#xD;
+   at sauceLabs_PageObject.StepDefinitions.AddToCartStepDefinitions.WhenUserAddsItemToCartAndClicksOnCartButton() in C:\Users\shkar\source\repos\sauceLabs_PageObject\sauceLabs_PageObject\StepDefinitions\AddToCartStepDefinitions.cs:line 37&#xD;
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()&#xD;
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()&#xD;
+   at sauceLabs_PageObject.Features.AddToCartFeature.ScenarioCleanup()&#xD;
+   at sauceLabs_PageObject.Features.AddToCartFeature.UserIsViewingAnItem() in C:\Users\shkar\source\repos\sauceLabs_PageObject\sauceLabs_PageObject\Features\addToCart.feature:line 9&#xD;
+--NoSuchElementException&#xD;
+   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)&#xD;
+   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)&#xD;
+   at sauceLabs_PageObject.Pages.AddToCart.&lt;AddItemToCart&gt;b__3_0(IWebDriver d) in C:\Users\shkar\source\repos\sauceLabs_PageObject\sauceLabs_PageObject\Pages\addToCart.cs:line 15&#xD;
+   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2637f5e7-6447-42d5-a507-18f78db24ec5" testId="31dc9cf2-e7f4-cc9d-d43d-bd866083a274" testName="UserChecksOutCartItem" computerName="AUTOGGJLK96NG2O" duration="00:00:17.0211660" startTime="2025-02-13T14:56:57.6639287+05:30" endTime="2025-02-13T14:57:14.6852185+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2637f5e7-6447-42d5-a507-18f78db24ec5">
+      <Output>
+        <StdOut>Given User is viewing items in the cart&#xD;
+Items in cart are shown&#xD;
+-&gt; done: SauceLabsStepDefinitions.GivenUserIsViewingItemsInTheCart() (11.1s)&#xD;
+When User clicks checkout&#xD;
+-&gt; done: SauceLabsStepDefinitions.WhenUserClicksCheckout() (1.6s)&#xD;
+And User enters firstname, lastname and postal code&#xD;
+-&gt; done: SauceLabsStepDefinitions.WhenUserEntersFirstnameLastnameAndPostalCode() (1.7s)&#xD;
+And User clicks on continue&#xD;
+-&gt; done: SauceLabsStepDefinitions.WhenUserClicksOnContinue() (1.6s)&#xD;
+And OUser clicks on finish&#xD;
+-&gt; error: element click intercepted: Element &lt;button class="btn btn_action btn_medium cart_button" data-test="finish" id="finish" name="finish"&gt;...&lt;/button&gt; is not clickable at point (1138, 551). Other element would receive the click: &lt;footer class="footer" data-test="footer"&gt;...&lt;/footer&gt;&#xD;
+  (Session info: chrome=133.0.6943.54) (1.1s)&#xD;
+Then Order confirmation page shows up&#xD;
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element &lt;button class="btn btn_action btn_medium cart_button" data-test="finish" id="finish" name="finish"&gt;...&lt;/button&gt; is not clickable at point (1138, 551). Other element would receive the click: &lt;footer class="footer" data-test="footer"&gt;...&lt;/footer&gt;&#xD;
+  (Session info: chrome=133.0.6943.54)</Message>
+          <StackTrace>   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)&#xD;
+   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebElement.Execute(String commandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebElement.Click()&#xD;
+   at sauceLabs_PageObject.Pages.sauceLabs.finishClick() in C:\Users\shkar\source\repos\sauceLabs_PageObject\sauceLabs_PageObject\Pages\sauceLabs.cs:line 102&#xD;
+   at sauceLabs_PageObject.StepDefinitions.SauceLabsStepDefinitions.WhenOUserClicksOnFinish() in C:\Users\shkar\source\repos\sauceLabs_PageObject\sauceLabs_PageObject\StepDefinitions\SauceLabsStepDefinitions.cs:line 104&#xD;
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()&#xD;
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()&#xD;
+   at sauceLabs_PageObject.Features.SauceLabsFeature.ScenarioCleanup()&#xD;
+   at sauceLabs_PageObject.Features.SauceLabsFeature.UserChecksOutCartItem() in C:\Users\shkar\source\repos\sauceLabs_PageObject\sauceLabs_PageObject\Features\sauceLabs.feature:line 20
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="b2b7dce3-a004-44c7-ac61-2d3f8e66d5f0" testId="5a7a850c-a32f-95b5-2cbe-98089bbc7feb" testName="UserAddsItemToCart" computerName="AUTOGGJLK96NG2O" duration="00:00:11.0885810" startTime="2025-02-13T14:56:46.5752226+05:30" endTime="2025-02-13T14:56:57.6638841+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b2b7dce3-a004-44c7-ac61-2d3f8e66d5f0">
+      <Output>
+        <StdOut>Given User is on the login page&#xD;
+User is on login page&#xD;
+-&gt; done: SauceLabsStepDefinitions.GivenUserIsOnTheLoginPage() (4.7s)&#xD;
+When User enters username and password and logs in&#xD;
+-&gt; done: SauceLabsStepDefinitions.WhenUserEntersUsernameAndPasswordAndLogsIn() (1.7s)&#xD;
+And Views an item&#xD;
+-&gt; done: SauceLabsStepDefinitions.WhenViewsAnItem() (1.6s)&#xD;
+And Adds item to cart&#xD;
+-&gt; done: SauceLabsStepDefinitions.WhenAddsItemToCart() (1.6s)&#xD;
+And Opens cart&#xD;
+-&gt; done: SauceLabsStepDefinitions.WhenOpensCart() (1.6s)&#xD;
+Then Item added to cart shows up&#xD;
+cart opened&#xD;
+-&gt; done: SauceLabsStepDefinitions.ThenItemAddedToCartShowsUp() (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a3432646-6e90-4f81-b2ed-446426618589" testId="5566fd00-f670-15fe-8953-5623e6d8e942" testName="UserEntersInformationRequiredForCheckOut" computerName="AUTOGGJLK96NG2O" duration="00:00:04.0162920" startTime="2025-02-13T14:56:38.5365204+05:30" endTime="2025-02-13T14:56:42.5528415+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a3432646-6e90-4f81-b2ed-446426618589">
+      <Output>
+        <StdOut>Given user is in check out page&#xD;
+user is in checkout page&#xD;
+-&gt; done: Checkout2StepDefinitions.GivenUserIsInCheckOutPage() (4.0s)&#xD;
+When User enters firstname, lastname and postalcode and clicks on continue button&#xD;
+here&#xD;
+-&gt; error: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='first-name']"}&#xD;
+  (Session info: chrome=133.0.6943.54); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception (0.0s)&#xD;
+Then User is navigated to checkout overview page&#xD;
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='first-name']"}&#xD;
+  (Session info: chrome=133.0.6943.54); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception</Message>
+          <StackTrace>   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)&#xD;
+   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)&#xD;
+   at sauceLabs_PageObject.Pages.Checkout2.EnterCheckoutDetails(String firstName, String lastName, String postalCode) in C:\Users\shkar\source\repos\sauceLabs_PageObject\sauceLabs_PageObject\Pages\checkout2.cs:line 22&#xD;
+   at sauceLabs_PageObject.StepDefinitions.Checkout2StepDefinitions.WhenUserEntersFirstnameLastnameAndPostalcodeAndClicksOnContinueButton() in C:\Users\shkar\source\repos\sauceLabs_PageObject\sauceLabs_PageObject\StepDefinitions\Checkout2StepDefinitions.cs:line 30&#xD;
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()&#xD;
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()&#xD;
+   at sauceLabs_PageObject.Features.Checkout2Feature.ScenarioCleanup()&#xD;
+   at sauceLabs_PageObject.Features.Checkout2Feature.UserEntersInformationRequiredForCheckOut() in C:\Users\shkar\source\repos\sauceLabs_PageObject\sauceLabs_PageObject\Features\checkout2.feature:line 9
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="18e9715b-4b24-48de-adab-dff8b622a839" testId="8b27a8e5-844c-de25-85b7-3c95172263b0" testName="UserIsInCheckoutOverviewPageAndHeClicksOnFinish" computerName="AUTOGGJLK96NG2O" duration="00:00:00.0221060" startTime="2025-02-13T14:56:42.5652690+05:30" endTime="2025-02-13T14:56:42.5873751+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="18e9715b-4b24-48de-adab-dff8b622a839">
+      <Output>
+        <StdOut>Given User is in checkout overview page&#xD;
+User is in the checkout overview page.&#xD;
+-&gt; done: CheckoutOverviewStepDefinitions.GivenUserIsInCheckoutOverviewPage() (0.0s)&#xD;
+When User scrolls down and clicks on finish&#xD;
+-&gt; error: no such element: Unable to locate element: {"method":"css selector","selector":"#finish"}&#xD;
+  (Session info: chrome=133.0.6943.54); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception (0.0s)&#xD;
+Then Confirmation page will be appeared&#xD;
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {"method":"css selector","selector":"#finish"}&#xD;
+  (Session info: chrome=133.0.6943.54); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception</Message>
+          <StackTrace>   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)&#xD;
+   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)&#xD;
+   at sauceLabs_PageObject.Pages.checkoutOverview.FinishClick() in C:\Users\shkar\source\repos\sauceLabs_PageObject\sauceLabs_PageObject\Pages\checkoutOverview.cs:line 16&#xD;
+   at sauceLabs_PageObject.StepDefinitions.CheckoutOverviewStepDefinitions.WhenUserScrollsDownAndClicksOnFinish() in C:\Users\shkar\source\repos\sauceLabs_PageObject\sauceLabs_PageObject\StepDefinitions\ChecoutOverviewStepDefinitions.cs:line 28&#xD;
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()&#xD;
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()&#xD;
+   at sauceLabs_PageObject.Features.ChecoutOverviewFeature.ScenarioCleanup()&#xD;
+   at sauceLabs_PageObject.Features.ChecoutOverviewFeature.UserIsInCheckoutOverviewPageAndHeClicksOnFinish() in C:\Users\shkar\source\repos\sauceLabs_PageObject\sauceLabs_PageObject\Features\checoutOverview.feature:line 9
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="UserIsLoggedInAndViewsAnItem" storage="c:\users\shkar\source\repos\saucelabs_pageobject\saucelabs_pageobject\bin\debug\net6.0\saucelabs_pageobject.dll" id="64b11049-483d-50fb-400a-08d1983d4a02">
+      <Execution id="01c142a7-94aa-4e4e-b23c-54a08b8d162e" />
+      <TestMethod codeBase="C:\Users\shkar\source\repos\sauceLabs_PageObject\sauceLabs_PageObject\bin\Debug\net6.0\sauceLabs_PageObject.dll" adapterTypeName="executor://nunit3testexecutor/" className="sauceLabs_PageObject.Features.ViewItemFeature" name="UserIsLoggedInAndViewsAnItem" />
+    </UnitTest>
+    <UnitTest name="UserIsOnConfirmationPageAndChecksForTheConfirmationText" storage="c:\users\shkar\source\repos\saucelabs_pageobject\saucelabs_pageobject\bin\debug\net6.0\saucelabs_pageobject.dll" id="f2df62b3-db37-539d-0c15-7aafce12af52">
+      <Execution id="ba90f529-6473-47b4-aad1-17d2bc010612" />
+      <TestMethod codeBase="C:\Users\shkar\source\repos\sauceLabs_PageObject\sauceLabs_PageObject\bin\Debug\net6.0\sauceLabs_PageObject.dll" adapterTypeName="executor://nunit3testexecutor/" className="sauceLabs_PageObject.Features.ConfirmationPageFeature" name="UserIsOnConfirmationPageAndChecksForTheConfirmationText" />
+    </UnitTest>
+    <UnitTest name="CartIsOpenedAndUserTriesToCheckout" storage="c:\users\shkar\source\repos\saucelabs_pageobject\saucelabs_pageobject\bin\debug\net6.0\saucelabs_pageobject.dll" id="4421fa06-fe69-44b9-3e12-86fd58acf595">
+      <Execution id="edb63380-cc26-4765-8387-51c0d26b1a7a" />
+      <TestMethod codeBase="C:\Users\shkar\source\repos\sauceLabs_PageObject\sauceLabs_PageObject\bin\Debug\net6.0\sauceLabs_PageObject.dll" adapterTypeName="executor://nunit3testexecutor/" className="sauceLabs_PageObject.Features.CheckoutFeature" name="CartIsOpenedAndUserTriesToCheckout" />
+    </UnitTest>
+    <UnitTest name="AddTwoNumbers" storage="c:\users\shkar\source\repos\saucelabs_pageobject\saucelabs_pageobject\bin\debug\net6.0\saucelabs_pageobject.dll" id="4eaadd63-7156-c678-fe35-bdb2b80d0ea9">
+      <Execution id="d6faedf5-fd07-4e2f-95e4-116a2c58b061" />
+      <TestMethod codeBase="C:\Users\shkar\source\repos\sauceLabs_PageObject\sauceLabs_PageObject\bin\Debug\net6.0\sauceLabs_PageObject.dll" adapterTypeName="executor://nunit3testexecutor/" className="sauceLabs_PageObject.Features.CalculatorFeature" name="AddTwoNumbers" />
+    </UnitTest>
+    <UnitTest name="UserIsInCheckoutOverviewPageAndHeClicksOnFinish" storage="c:\users\shkar\source\repos\saucelabs_pageobject\saucelabs_pageobject\bin\debug\net6.0\saucelabs_pageobject.dll" id="8b27a8e5-844c-de25-85b7-3c95172263b0">
+      <Execution id="18e9715b-4b24-48de-adab-dff8b622a839" />
+      <TestMethod codeBase="C:\Users\shkar\source\repos\sauceLabs_PageObject\sauceLabs_PageObject\bin\Debug\net6.0\sauceLabs_PageObject.dll" adapterTypeName="executor://nunit3testexecutor/" className="sauceLabs_PageObject.Features.ChecoutOverviewFeature" name="UserIsInCheckoutOverviewPageAndHeClicksOnFinish" />
+    </UnitTest>
+    <UnitTest name="UserIsInTheLoginPageAndLogsInUsingCorrectUsernameAndPassword" storage="c:\users\shkar\source\repos\saucelabs_pageobject\saucelabs_pageobject\bin\debug\net6.0\saucelabs_pageobject.dll" id="68b7032f-c59e-967d-073c-8b7c564b9a6d">
+      <Execution id="72c35c8b-1e84-4351-8a5a-a0077a479798" />
+      <TestMethod codeBase="C:\Users\shkar\source\repos\sauceLabs_PageObject\sauceLabs_PageObject\bin\Debug\net6.0\sauceLabs_PageObject.dll" adapterTypeName="executor://nunit3testexecutor/" className="sauceLabs_PageObject.Features.LoginPageFeature" name="UserIsInTheLoginPageAndLogsInUsingCorrectUsernameAndPassword" />
+    </UnitTest>
+    <UnitTest name="UserTriesToLogIn" storage="c:\users\shkar\source\repos\saucelabs_pageobject\saucelabs_pageobject\bin\debug\net6.0\saucelabs_pageobject.dll" id="2c7273f1-e8af-0c0b-008a-af0950e095c2">
+      <Execution id="c1e5598c-6773-4fec-88f3-d81725aa5a77" />
+      <TestMethod codeBase="C:\Users\shkar\source\repos\sauceLabs_PageObject\sauceLabs_PageObject\bin\Debug\net6.0\sauceLabs_PageObject.dll" adapterTypeName="executor://nunit3testexecutor/" className="sauceLabs_PageObject.Features.LoginFeature" name="UserTriesToLogIn" />
+    </UnitTest>
+    <UnitTest name="UserAddsItemToCart" storage="c:\users\shkar\source\repos\saucelabs_pageobject\saucelabs_pageobject\bin\debug\net6.0\saucelabs_pageobject.dll" id="5a7a850c-a32f-95b5-2cbe-98089bbc7feb">
+      <Execution id="b2b7dce3-a004-44c7-ac61-2d3f8e66d5f0" />
+      <TestMethod codeBase="C:\Users\shkar\source\repos\sauceLabs_PageObject\sauceLabs_PageObject\bin\Debug\net6.0\sauceLabs_PageObject.dll" adapterTypeName="executor://nunit3testexecutor/" className="sauceLabs_PageObject.Features.SauceLabsFeature" name="UserAddsItemToCart" />
+    </UnitTest>
+    <UnitTest name="UserChecksOutCartItem" storage="c:\users\shkar\source\repos\saucelabs_pageobject\saucelabs_pageobject\bin\debug\net6.0\saucelabs_pageobject.dll" id="31dc9cf2-e7f4-cc9d-d43d-bd866083a274">
+      <Execution id="2637f5e7-6447-42d5-a507-18f78db24ec5" />
+      <TestMethod codeBase="C:\Users\shkar\source\repos\sauceLabs_PageObject\sauceLabs_PageObject\bin\Debug\net6.0\sauceLabs_PageObject.dll" adapterTypeName="executor://nunit3testexecutor/" className="sauceLabs_PageObject.Features.SauceLabsFeature" name="UserChecksOutCartItem" />
+    </UnitTest>
+    <UnitTest name="UserEntersInformationRequiredForCheckOut" storage="c:\users\shkar\source\repos\saucelabs_pageobject\saucelabs_pageobject\bin\debug\net6.0\saucelabs_pageobject.dll" id="5566fd00-f670-15fe-8953-5623e6d8e942">
+      <Execution id="a3432646-6e90-4f81-b2ed-446426618589" />
+      <TestMethod codeBase="C:\Users\shkar\source\repos\sauceLabs_PageObject\sauceLabs_PageObject\bin\Debug\net6.0\sauceLabs_PageObject.dll" adapterTypeName="executor://nunit3testexecutor/" className="sauceLabs_PageObject.Features.Checkout2Feature" name="UserEntersInformationRequiredForCheckOut" />
+    </UnitTest>
+    <UnitTest name="UserIsViewingAnItem" storage="c:\users\shkar\source\repos\saucelabs_pageobject\saucelabs_pageobject\bin\debug\net6.0\saucelabs_pageobject.dll" id="baa52d67-5ff2-f210-6429-6fb8333d76d9">
+      <Execution id="2754c9b3-cc55-4bd9-a227-8e068f3b7681" />
+      <TestMethod codeBase="C:\Users\shkar\source\repos\sauceLabs_PageObject\sauceLabs_PageObject\bin\Debug\net6.0\sauceLabs_PageObject.dll" adapterTypeName="executor://nunit3testexecutor/" className="sauceLabs_PageObject.Features.AddToCartFeature" name="UserIsViewingAnItem" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="2c7273f1-e8af-0c0b-008a-af0950e095c2" executionId="c1e5598c-6773-4fec-88f3-d81725aa5a77" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4eaadd63-7156-c678-fe35-bdb2b80d0ea9" executionId="d6faedf5-fd07-4e2f-95e4-116a2c58b061" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="64b11049-483d-50fb-400a-08d1983d4a02" executionId="01c142a7-94aa-4e4e-b23c-54a08b8d162e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f2df62b3-db37-539d-0c15-7aafce12af52" executionId="ba90f529-6473-47b4-aad1-17d2bc010612" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="68b7032f-c59e-967d-073c-8b7c564b9a6d" executionId="72c35c8b-1e84-4351-8a5a-a0077a479798" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4421fa06-fe69-44b9-3e12-86fd58acf595" executionId="edb63380-cc26-4765-8387-51c0d26b1a7a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="baa52d67-5ff2-f210-6429-6fb8333d76d9" executionId="2754c9b3-cc55-4bd9-a227-8e068f3b7681" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="31dc9cf2-e7f4-cc9d-d43d-bd866083a274" executionId="2637f5e7-6447-42d5-a507-18f78db24ec5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5a7a850c-a32f-95b5-2cbe-98089bbc7feb" executionId="b2b7dce3-a004-44c7-ac61-2d3f8e66d5f0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5566fd00-f670-15fe-8953-5623e6d8e942" executionId="a3432646-6e90-4f81-b2ed-446426618589" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8b27a8e5-844c-de25-85b7-3c95172263b0" executionId="18e9715b-4b24-48de-adab-dff8b622a839" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="11" executed="9" passed="2" failed="7" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>NUnit Adapter 5.0.0.0: Test execution started&#xD;
+Running all tests in C:\Users\shkar\source\repos\sauceLabs_PageObject\sauceLabs_PageObject\bin\Debug\net6.0\sauceLabs_PageObject.dll&#xD;
+   NUnit3TestExecutor discovered 11 of 11 NUnit test cases using Current Discovery mode, Non-Explicit run&#xD;
+Initializing WebDriver...&#xD;
+Starting ChromeDriver 133.0.6943.98 (da53563ceb66412e2637507c8724bd0cab05e453-refs/branch-heads/6943_85@{#7}) on port 49735&#xD;
+Only local connections are allowed.&#xD;
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.&#xD;
+ChromeDriver was started successfully on port 49735.&#xD;
+Given User is viewing an item&#xD;
+User is viewing item&#xD;
+-&gt; done: AddToCartStepDefinitions.GivenUserIsViewingAnItem() (0.0s)&#xD;
+When User adds item to cart and clicks on cart button&#xD;
+-&gt; error: Timed out after 20 seconds (20.3s)&#xD;
+Then Cart will be opened&#xD;
+-&gt; skipped because of previous errors&#xD;
+&#xD;
+Given the first number is 50&#xD;
+-&gt; pending: CalculatorStepDefinitions.GivenTheFirstNumberIs(50)&#xD;
+And the second number is 70&#xD;
+-&gt; skipped because of previous errors&#xD;
+When the two numbers are added&#xD;
+-&gt; skipped because of previous errors&#xD;
+Then the result should be 120&#xD;
+-&gt; skipped because of previous errors&#xD;
+&#xD;
+AddTwoNumbers: One or more step definitions are not implemented yet.&#xD;
+  CalculatorStepDefinitions.GivenTheFirstNumberIs(50)&#xD;
+Given user is in check out page&#xD;
+user is in checkout page&#xD;
+-&gt; done: Checkout2StepDefinitions.GivenUserIsInCheckOutPage() (4.0s)&#xD;
+When User enters firstname, lastname and postalcode and clicks on continue button&#xD;
+here&#xD;
+-&gt; error: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='first-name']"}&#xD;
+  (Session info: chrome=133.0.6943.54); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception (0.0s)&#xD;
+Then User is navigated to checkout overview page&#xD;
+-&gt; skipped because of previous errors&#xD;
+&#xD;
+Given The cart is opened&#xD;
+Cart is opened.&#xD;
+-&gt; done: CheckoutStepDefinitions.GivenTheCartIsOpened() (0.0s)&#xD;
+When User clicks on checkout button&#xD;
+-&gt; error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@id='checkout']"}&#xD;
+  (Session info: chrome=133.0.6943.54); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception (0.0s)&#xD;
+Then checkout page will be opened&#xD;
+-&gt; skipped because of previous errors&#xD;
+&#xD;
+Given User is in checkout overview page&#xD;
+User is in the checkout overview page.&#xD;
+-&gt; done: CheckoutOverviewStepDefinitions.GivenUserIsInCheckoutOverviewPage() (0.0s)&#xD;
+When User scrolls down and clicks on finish&#xD;
+-&gt; error: no such element: Unable to locate element: {"method":"css selector","selector":"#finish"}&#xD;
+  (Session info: chrome=133.0.6943.54); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception (0.0s)&#xD;
+Then Confirmation page will be appeared&#xD;
+-&gt; skipped because of previous errors&#xD;
+&#xD;
+Given User is in the confirmation page&#xD;
+User is on the confirmation page.&#xD;
+-&gt; done: ConfirmationPageStepDefinitions.GivenUserIsInTheConfirmationPage() (0.0s)&#xD;
+When User checks for confirmation text and compares it with actual text&#xD;
+-&gt; error: no such element: Unable to locate element: {"method":"xpath","selector":"//h2[normalize-space()='Thank you for your order!']"}&#xD;
+  (Session info: chrome=133.0.6943.54); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception (0.0s)&#xD;
+Then If it matches, the test case passes. Else it fails.&#xD;
+-&gt; skipped because of previous errors&#xD;
+&#xD;
+Given User is in the login page&#xD;
+-&gt; No matching step definition found for the step. Use the following code to create one:&#xD;
+        [Given(@"User is in the login page")]&#xD;
+        public void GivenUserIsInTheLoginPage()&#xD;
+        {&#xD;
+            _scenarioContext.Pending();&#xD;
+        }&#xD;
+&#xD;
+When User types user name and password and clicks on login button&#xD;
+-&gt; No matching step definition found for the step. Use the following code to create one:&#xD;
+        [When(@"User types user name and password and clicks on login button")]&#xD;
+        public void WhenUserTypesUserNameAndPasswordAndClicksOnLoginButton()&#xD;
+        {&#xD;
+            _scenarioContext.Pending();&#xD;
+        }&#xD;
+&#xD;
+Then User logs in&#xD;
+-&gt; No matching step definition found for the step. Use the following code to create one:&#xD;
+        [Then(@"User logs in")]&#xD;
+        public void ThenUserLogsIn()&#xD;
+        {&#xD;
+            _scenarioContext.Pending();&#xD;
+        }&#xD;
+&#xD;
+&#xD;
+UserTriesToLogIn: No matching step definition found for one or more steps.&#xD;
+using System;&#xD;
+using TechTalk.SpecFlow;&#xD;
+&#xD;
+namespace MyNamespace&#xD;
+{&#xD;
+    [Binding]&#xD;
+    public class StepDefinitions&#xD;
+    {&#xD;
+        private readonly ScenarioContext _scenarioContext;&#xD;
+&#xD;
+        public StepDefinitions(ScenarioContext scenarioContext)&#xD;
+        {&#xD;
+            _scenarioContext = scenarioContext;&#xD;
+        }&#xD;
+        [Given(@"User is in the login page")]&#xD;
+        public void GivenUserIsInTheLoginPage()&#xD;
+        {&#xD;
+            _scenarioContext.Pending();&#xD;
+        }&#xD;
+        &#xD;
+        [When(@"User types user name and password and clicks on login button")]&#xD;
+        public void WhenUserTypesUserNameAndPasswordAndClicksOnLoginButton()&#xD;
+        {&#xD;
+            _scenarioContext.Pending();&#xD;
+        }&#xD;
+        &#xD;
+        [Then(@"User logs in")]&#xD;
+        public void ThenUserLogsIn()&#xD;
+        {&#xD;
+            _scenarioContext.Pending();&#xD;
+        }&#xD;
+    }&#xD;
+}&#xD;
+&#xD;
+Given User is on login page&#xD;
+-&gt; done: LoginStepDefinitions.GivenUserIsOnLoginPage() (3.7s)&#xD;
+When User enters username and password and clicks on login button&#xD;
+-&gt; done: LoginStepDefinitions.WhenUserEntersUsernameAndPassword() (0.3s)&#xD;
+Then User is logged in&#xD;
+User successfully logged in.&#xD;
+-&gt; done: LoginStepDefinitions.ThenUserIsLoggedIn() (0.0s)&#xD;
+&#xD;
+Given User is on the login page&#xD;
+User is on login page&#xD;
+-&gt; done: SauceLabsStepDefinitions.GivenUserIsOnTheLoginPage() (4.7s)&#xD;
+When User enters username and password and logs in&#xD;
+-&gt; done: SauceLabsStepDefinitions.WhenUserEntersUsernameAndPasswordAndLogsIn() (1.7s)&#xD;
+And Views an item&#xD;
+-&gt; done: SauceLabsStepDefinitions.WhenViewsAnItem() (1.6s)&#xD;
+And Adds item to cart&#xD;
+-&gt; done: SauceLabsStepDefinitions.WhenAddsItemToCart() (1.6s)&#xD;
+And Opens cart&#xD;
+-&gt; done: SauceLabsStepDefinitions.WhenOpensCart() (1.6s)&#xD;
+Then Item added to cart shows up&#xD;
+cart opened&#xD;
+-&gt; done: SauceLabsStepDefinitions.ThenItemAddedToCartShowsUp() (0.0s)&#xD;
+&#xD;
+Given User is viewing items in the cart&#xD;
+Items in cart are shown&#xD;
+-&gt; done: SauceLabsStepDefinitions.GivenUserIsViewingItemsInTheCart() (11.1s)&#xD;
+When User clicks checkout&#xD;
+-&gt; done: SauceLabsStepDefinitions.WhenUserClicksCheckout() (1.6s)&#xD;
+And User enters firstname, lastname and postal code&#xD;
+-&gt; done: SauceLabsStepDefinitions.WhenUserEntersFirstnameLastnameAndPostalCode() (1.7s)&#xD;
+And User clicks on continue&#xD;
+-&gt; done: SauceLabsStepDefinitions.WhenUserClicksOnContinue() (1.6s)&#xD;
+And OUser clicks on finish&#xD;
+-&gt; error: element click intercepted: Element &lt;button class="btn btn_action btn_medium cart_button" data-test="finish" id="finish" name="finish"&gt;...&lt;/button&gt; is not clickable at point (1138, 551). Other element would receive the click: &lt;footer class="footer" data-test="footer"&gt;...&lt;/footer&gt;&#xD;
+  (Session info: chrome=133.0.6943.54) (1.1s)&#xD;
+Then Order confirmation page shows up&#xD;
+-&gt; skipped because of previous errors&#xD;
+&#xD;
+Given User is logged in&#xD;
+User is logged in&#xD;
+-&gt; done: ViewItemStepDefinitions.GivenUserIsLoggedIn() (0.0s)&#xD;
+When User views an item&#xD;
+-&gt; error: Timed out after 20 seconds (20.4s)&#xD;
+Then Item data is displayed&#xD;
+-&gt; skipped because of previous errors&#xD;
+&#xD;
+Closing WebDriver...&#xD;
+NUnit Adapter 5.0.0.0: Test execution complete&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>
