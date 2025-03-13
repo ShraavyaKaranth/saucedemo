@@ -30,7 +30,7 @@ namespace sauceLabs_PageObject.Hooks
         [BeforeTestRun]
         public static void BeforeTestRun()
         {
-            driver = sauceLabs_PageObject.Pages.WebDriverManager.GetDriver();
+            driver = sauceLabs_PageObject.Utils.WebDriverManager.GetDriver();
 
             string reportsDir = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Reports");
             Directory.CreateDirectory(reportsDir);
