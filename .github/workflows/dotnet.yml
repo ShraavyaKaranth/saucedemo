@@ -56,10 +56,12 @@ jobs:
       run: dotnet test --no-build --configuration Release --filter "FullyQualifiedName~ExecutionOfSaucedemo"
 
     - name: Upload Extent Report
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: ExtentReport
         path: sauceLabs_PageObject/bin/Debug/net6.0/Reports/ExtentReport.html
+        if-no-files-found: error  # Optional: Fails if the report isn't generated
+
 
 
 
