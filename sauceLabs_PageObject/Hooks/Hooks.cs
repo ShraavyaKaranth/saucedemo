@@ -22,10 +22,6 @@ namespace sauceLabs_PageObject.Hooks
         private static string reportPath = "";
         private static string screenshotsDir = "";
 
-
-        private static string reportPath;
-        private static string screenshotsDir;
-
         public Hooks(ScenarioContext scenarioContext)
         {
             _scenarioContext = scenarioContext;
@@ -118,6 +114,7 @@ namespace sauceLabs_PageObject.Hooks
         }
     }
 }
+
 
 // using System;
 // using System.IO;
