@@ -44,18 +44,84 @@ jobs:
         chromedriver --version
 
     - name: Restore dependencies
-      working-directory: sauceLabs_PageObject  # ✅ Change to the project folder
+      working-directory: sauceLabs_PageObject
       run: dotnet restore
 
     - name: Build project
-      working-directory: sauceLabs_PageObject  # ✅ Change to the project folder
+      working-directory: sauceLabs_PageObject
       run: dotnet build --no-restore --configuration Release
 
-    - name: List available tests (for debugging)
-      working-directory: sauceLabs_PageObject  # ✅ Change to the project folder
-      run: dotnet test --list-tests
-
-    - name: Run SpecFlow Tests (Happy Flow)
+    - name: Run SpecFlow Tests
       working-directory: sauceLabs_PageObject
       run: dotnet test --no-build --configuration Release --filter "FullyQualifiedName~ExecutionOfSaucedemo"
+
+    - name: Upload Extent Report
+      uses: actions/upload-artifact@v3
+      with:
+        name: ExtentReport
+        path: sauceLabs_PageObject/bin/Debug/net6.0/Reports/ExtentReport.html
+
+
+
+
+# name: .NET SpecFlow Tests
+
+# on:
+#   push:
+#     branches: [ "master" ]
+#   pull_request:
+#     branches: [ "master" ]
+
+# jobs:
+#   test:
+#     runs-on: ubuntu-latest
+
+#     steps:
+#     - name: Checkout repository
+#       uses: actions/checkout@v4
+
+#     - name: Setup .NET
+#       uses: actions/setup-dotnet@v4
+#       with:
+#         dotnet-version: 6.0.x
+
+#     - name: Install Google Chrome
+#       run: |
+#         wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+#         sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
+#         sudo apt update
+#         sudo apt install -y google-chrome-stable
+
+#     - name: Install Matching ChromeDriver
+#       run: |
+#         CHROME_VERSION=$(google-chrome --version | grep -oP '[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+' | head -1)
+#         CHROMEDRIVER_VERSION=$(curl -s "https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json" \
+#           | jq -r ".versions[] | select(.version==\"$CHROME_VERSION\") | .downloads.chromedriver[] | select(.platform==\"linux64\") | .url")
+
+#         if [[ -z "$CHROMEDRIVER_VERSION" ]]; then
+#           echo "Error: No matching ChromeDriver found for Chrome version $CHROME_VERSION"
+#           exit 1
+#         fi
+
+#         wget -O chromedriver.zip "$CHROMEDRIVER_VERSION"
+#         unzip chromedriver.zip
+#         sudo mv chromedriver-linux64/chromedriver /usr/local/bin/
+#         sudo chmod +x /usr/local/bin/chromedriver
+#         chromedriver --version
+
+#     - name: Restore dependencies
+#       working-directory: sauceLabs_PageObject  # ✅ Change to the project folder
+#       run: dotnet restore
+
+#     - name: Build project
+#       working-directory: sauceLabs_PageObject  # ✅ Change to the project folder
+#       run: dotnet build --no-restore --configuration Release
+
+#     - name: List available tests (for debugging)
+#       working-directory: sauceLabs_PageObject  # ✅ Change to the project folder
+#       run: dotnet test --list-tests
+
+#     - name: Run SpecFlow Tests (Happy Flow)
+#       working-directory: sauceLabs_PageObject
+#       run: dotnet test --no-build --configuration Release --filter "FullyQualifiedName~ExecutionOfSaucedemo"
 
