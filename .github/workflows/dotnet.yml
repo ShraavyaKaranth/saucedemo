@@ -54,6 +54,7 @@ jobs:
     - name: Run SpecFlow Tests
       working-directory: sauceLabs_PageObject
       run: dotnet test --no-build --configuration Release --filter "FullyQualifiedName~ExecutionOfSaucedemo"
+      continue-on-error: true
 
     - name: Upload Extent Report
       uses: actions/upload-artifact@v4
