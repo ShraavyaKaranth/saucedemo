@@ -15,10 +15,13 @@ namespace sauceLabs_PageObject.Hooks
     {
         private static IWebDriver driver;
         private readonly ScenarioContext _scenarioContext;
-        private static ExtentReports _extent;
-        private static ExtentTest _feature;
-        private ExtentTest _scenario;
-        private static ExtentSparkReporter _sparkReporter;
+        private static ExtentReports _extent = new ExtentReports();
+        private static ExtentTest _feature = null!;
+        private ExtentTest _scenario = null!;
+        private static ExtentSparkReporter _sparkReporter = null!;
+        private static string reportPath = "";
+        private static string screenshotsDir = "";
+
 
         private static string reportPath;
         private static string screenshotsDir;
@@ -31,7 +34,7 @@ namespace sauceLabs_PageObject.Hooks
         [BeforeTestRun]
         public static void BeforeTestRun()
         {
-            driver = WebDriverManager.GetDriver();
+            driver = sauceLabs_PageObject.Pages.WebDriverManager.GetDriver();
 
             string reportsDir = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Reports");
             Directory.CreateDirectory(reportsDir);
